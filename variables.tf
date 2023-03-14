@@ -16,9 +16,9 @@ variable "instance_name" {
     description = "Nome da instância EC2"
 }
 
-variable "instance_env" {
+variable "env" {
     type = string
-    default = "ec2_via_terraform"
+    default = "hml"
     description = "Nome da instância EC2"
 }
 
@@ -26,4 +26,10 @@ variable "base_cidr_block" {
     type = string
     default = "10.0.0.0/16"
     description = "base_cidr_block da VPC"
+}
+
+variable "vpc_name" {
+    type = string
+    default = "VPC_terraform"
+    description = "Nome da VPC"
 }
